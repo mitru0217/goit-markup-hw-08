@@ -1,0 +1,82 @@
+.card {
+    @extend %ul;
+    display: flex;
+    flex-wrap: wrap
+}
+.card__item {
+    width: 370px;
+    border: 1px solid rgba(238, 238, 238, 1);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+}
+.card__item:nth-child(3n) {
+    margin-right: 0;
+}
+.card__item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+.card__overlay {
+    position: relative;
+    overflow: hidden;
+}
+.card__link {
+    @extend %a;
+}
+.card__link:hover .card__thumb,
+.card__link:focus .card__thumb {
+    transform: translateY(-100%)
+}
+.card__thumb {
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    border: 1px solid transparent;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(0%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+}
+.card__text-thumb {
+    position: absolute;
+    width: 370px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+.card__animation-text {
+    @extend %p;
+    display: block;
+    width: 322px;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+    margin: 0 auto;
+}
+.card__title {
+    @extend %h2;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: $title-text-color;
+}
+.card__text {
+    @extend %p;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: $text-color;
+}
+.card__field {
+    padding: 20px 24px;
+}

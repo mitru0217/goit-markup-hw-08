@@ -1,0 +1,36 @@
+.description {
+    display: none;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.description__list {
+     @extend %ul;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.description__position {
+    position: relative;
+}
+.description__item:not(:last-child) {
+    margin-right: 30px;
+}
+.description__name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+.description__text {
+    @extend %p;
+    padding-top: 27px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+}

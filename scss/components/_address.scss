@@ -1,0 +1,20 @@
+.address {
+    font-style: normal;
+   }
+.address__list {
+    @extend %ul;
+}
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+.address__link {
+    @extend %a;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $color-client;
+    font-style: normal;
+    &--color {
+        color: $secondary-text-color;
+        }
+}
