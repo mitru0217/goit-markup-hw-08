@@ -4,25 +4,32 @@
     justify-content: start;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 24px;
-    // font-size: 26px;
+    font-size: 24px; 
     line-height: 1.2;
     &__text {
       color: $activ-color;
         }
-        background-color: darkgoldenrod;
+    @media (min-width:1200px) {
+      font-size: 26px;
+    }
 }
 .logo__link {
   @extend %a;
     padding-bottom: 16px;
     padding-top: 16px;
-    // padding-bottom: 25px;
-    // padding-top: 24px;
     color: $title-text-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media (min-width: 768px) {
+        padding-bottom: 26px;
+        padding-top: 26px;
+      }  
+    @media (min-width:1200px) {
+        padding-bottom: 25px;
+        padding-top: 24px;
+      }
     &:hover,
     &:focus {
       color: $activ-color;
         }
-        background-color: hotpink;
 }

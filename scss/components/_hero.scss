@@ -8,36 +8,43 @@
         padding-bottom: 200px;
     }
 }
-
 .hero__overlay {
-    // max-width: 1600px;
+   
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url('../../images/Hero-mobile-original.jpg');
     background-position: center;
     background-size: cover;
 
-
-}
-
-.hero__box {
-    // width: 480px;
-    // height: 400px;
-    background-image: url('../../images/imgoriginal.jpg');
-
-    @media screen and (max-width: 768px) {
-        width: 768px;
-    }
-
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero__box {
-            background-image: url('../../images/img@2x.jpg');
-        }
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+                url('../../images/Hero-mobile@2x.jpg');
+            }
+    @media ( min-width: 768px) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+            url("../../images/Hero-laptop-original.jpg");
+            @media (min-device-pixel-ratio: 2),
+                   (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+                    url('../../images/Hero-laptop@2x.jpg');
+                } 
     }
+        @media (min-width: 1200px) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url("../../images/Hero-desctop-original.jpg");
+            @media (min-device-pixel-ratio: 2),
+                   (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url('../../images/Hero-desctop@2x.jpg');
+        }
 }
-
+}
 .hero__title {
     @extend %h1;
     margin-bottom: 30px;

@@ -1,7 +1,12 @@
 .description {
     display: none;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media (min-width: 1200px) {
+     display: block;
+     padding-top: 94px;
+     padding-bottom: 94px;   
+    }
+    
+
 }
 .description__list {
      @extend %ul;
