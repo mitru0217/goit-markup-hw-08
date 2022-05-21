@@ -70,7 +70,7 @@
                 <a href="#" class="menu-container__link">LinkedIn</a>
               </li>
             </ul>
-          </div>
+          </div> 
         </nav>
       </div>
     </header>
@@ -83,7 +83,7 @@
         </h1>
         <button type="button" class="button hero__button " data-modal-open>Заказать услугу</button>
       </div>
-    </section>
+    </section> 
       <section class="features">
         <div class="container">
           <ul class="features__list">
@@ -133,25 +133,34 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
       <section class="description">
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="description__list">
             <li class="description__item description__position">
-              <img src="./images/img1.jpg" width="370" alt="Планшет и клавиатура" />
+              <picture>
+                <source srcset="./images/img-1@1x.jpg 1x, ./images/img-1@2x.jpg 2x" media="(min-width: 1200px)">
+                <img src="./images/img-1@1x.jpg" alt="Десктопные приложения" />
+              </picture>
               <div class="description__name">
                 <p class="description__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="description__item  description__position">
-              <img src="./images/img2.jpg" width="370" alt="Ноутбук и смартфон" />
+              <picture>
+                <source srcset="./images/img-2@1x.jpg 1x, ./images/img-2@2x.jpg 2x" media="(min-width: 1200px)">
+                <img src="./images/img-2@1x.jpg" alt="Мобильные приложения" />
+              </picture>
                <div class="description__name">
                 <p class="description__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="description__item   description__position">
-              <img src="./images/img3.jpg" width="370" alt="Планшет" />
+                <picture>
+                  <source srcset="./images/img-3@1x.jpg 1x, ./images/img-3@2x.jpg 2x" media="(min-width: 1200px)">
+                  <img src="./images/img-3@1x.jpg" alt="Дизайнерские решения" />
+                </picture>
                <div class="description__name">
                 <p class="description__text">Дизайнерские решения</p>
               </div>
@@ -159,37 +168,21 @@
           </ul>
         </div>
       </section>
-       <!-- <section class="team">
+       <section class="team">
         <div class="container">
-          <h2 class="title">Наша команда</h2>
+          <h2 class="title team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-              srcset="
-              ./images/mob/Demyanenko-mobile.jpg 480w,
-              ./images/laptop/Dem-laptop.jpg 768w,
-              ./images/desctop/Dem-desktop.jpg 1200w
-              "
-               src="./images/mob/Demyanenko-mobile.jpg" alt="Игорь Демьяненко"
-               sizes="(min-width: 1200px) 25vw, (min-width:768px) 50vw, 100vw"/>
-              <picture>
-                <source srcset="./images/mob/Demyanenko-mobile.jpg 1x, ./images/mob/imgDem-mobile2x.jpg 2x"
-                  media="(max-width: 767px)">
-                <source srcset="./images/laptop/Dem-laptop.jpg 1x, ./images/laptop/imgDem-laptop2x.jpg 2x"
-                media="(max-width: 1199px)">
-                <source srcset="./images/desctop/Dem-desktop.jpg 1x, ./images/desctop/imgDem-desktop2x.jpg 2x"
-                media="(min-width: 1200px)">
-                <img
-                srcset="./images/mob/Demyanenko-mobile.jpg 1x, ./images/mob/imgDem-mobile2x.jpg 2x"
-                  media="(max-width: 767px)"/>
-                <img
-                srcset="./images/laptop/Dem-laptop.jpg 1x, ./images/laptop/imgDem-laptop2x.jpg 2x"
-                media="(max-width: 1199px)"/>
-                <img srcset="./images/desctop/Dem-desktop.jpg 1x, ./images/desctop/imgDem-desktop2x.jpg 2x"
-                media="(min-width: 1200px)"/>
-                 <img src="./images/mob/Demyanenko-mobile.jpg" alt="Игорь Демьяненко"/>
-              </picture>
-              <div class="team__field">
+         <picture>
+            <source srcset="./images/mob/Demyanenko-mobile.jpg 1x, ./images/mob/imgDem-mobile2x.jpg 2x"
+             media="(max-width: 767px)">
+             <source srcset="./images/laptop/Dem-laptop.jpg 1x, ./images/laptop/imgDem-laptop2x.jpg 2x"
+              media="(max-width: 1199px)">
+              <source srcset="./images/desctop/img@1x.jpg 1x, ./images/desctop/img@1x.jpg 2x"
+              media="(min-width: 1200px)">
+              <img src="./images/mob/Demyanenko-mobile.jpg" alt="Игорь Демьяненко" />
+          </picture>
+            <div class="team__field">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
                   <ul class="social team-social">
@@ -225,7 +218,15 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/team-card-2.jpg" width="270" alt="Ольга Репина" /> 
+                  <picture>
+                    <source srcset="./images/mob/Repina-mobile.jpg 1x, ./images/mob/imgRep-mob2x.jpg 2x"
+                      media="(max-width: 767px)">
+                    <source srcset="./images/laptop/Rep-laptop.jpg 1x, ./images/laptop/imgTar-laptop2x.jpg 1x "
+                      media="(max-width: 1199px)">
+                    <source srcset="./images/desctop/repina.jpg 1x, ./images/desctop/imgRep-desctop2x.jpg 2x"
+                     media="(min-width: 1200px)">
+                    <img src="./images/mob/Repina-mobile.jpg" alt="Ольга Репина" />
+                  </picture>
               <div class="team__field">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -262,7 +263,15 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/team-card-3.jpg" width="270" alt="Николай Тарасов" />
+              <picture>
+                <source srcset="./images/mob/Tarasov-mobile.jpg 1x, ./images/mob/imgTar-mob2x.jpg 2x"
+                  media="(max-width: 767px)">
+                <source srcset="./images/laptop/Tar-laptop.jpg 1x, ./images/laptop/imgTar-laptop2x.jpg 2x"
+                  media="(max-width: 1199px)">
+                <source srcset="./images/desctop/tarasov.jpg 1x, ./images/desctop/imgTar-desctoo2x.jpg 2x"
+                 media="(min-width: 1200px)">
+                <img src="./images/mob/Tarasov-mobile.jpg" alt="Николай Тарасов" />
+              </picture>
             <div class="team__field">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -297,8 +306,17 @@
                     </li>
                   </ul>
             </div>
+            </li>
             <li class="team__item">
-              <img src="./images/team-card-4.jpg" width="270" alt="Михаил Ермаков" />
+              <picture>
+                <source srcset="./images/mob/Ermakov-mobile.jpg 1x, ./images/mob/imgErm-mob2x.jpg 2x"
+                  media="(max-width: 767px)">
+                <source srcset="./images/laptop/Erm-laptop.jpg 1x, ./images/laptop/imgerm-laptop2x.jpg 2x"
+                  media="(max-width: 1199px)">
+                <source srcset="./images/desctop/ermakov.jpg 1x, ./images/desctop/imgErm-desctop2x.jpg 2x" 
+                media="(min-width: 1200px)">
+                <img src="./images/mob/Ermakov-mobile.jpg" alt="Михаил Ермаков" />
+              </picture>
               <div class="team__field">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -336,7 +354,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="client">
         <div class="container">
           <h2 class="title client-title">Постоянные клиенты</h2>
@@ -387,77 +405,79 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
-      <div class="container footer__container">
-        <div class="footer__field">
-          <div class="logo footer__logo">
-            <a href="#" class="logo__link footer__link">
-           <span class="logo__text">Web</span>Studio
-           </a> 
-          </div>
-          <address class="address">
-            <ul class="address__list">
-              <li class="address__item">
-                <a href="#" class="address__link address__link--color">г. Киев, пр-т Леси Украинки, 26  
+    <footer class="footer">
+      <div class="container footer__desctop">
+       <div class="footer__container">
+            <div class="footer__field">
+              <div class="logo footer__logo">
+                <a href="#" class="logo__link footer__link">
+                  <span class="logo__text">Web</span>Studio
                 </a>
-              </li>
-              <li class="address__item">
-                <a href="#" class="address__link">info@example.com</a><br />
-              </li>
-              <li class="address__item">
-                <a href="#" class="address__link">+38 099 111 11 11</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="footer__social">
-          <h3 class="footer__title">Присоединяйтесь</h3>
-          <ul class="social">
-            <li class="social__item  social__item--bgcolor">
-              <a href="#" class="social__link">
-                       <svg  class="social__icon social__icon--fill">
-                           <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
-                       </svg>   
-                </a>
-            </li>
-            <li class="social__item social__item--bgcolor">
-                <a href="#" class="social__link">
-                       <svg  class="social__icon social__icon--fill">
-                           <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
-                       </svg>   
-                </a>
-            </li>
-            <li class="social__item social__item--bgcolor">
-                <a href="#" class="social__link">
-                       <svg  class="social__icon social__icon--fill">
-                           <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
-                       </svg>   
-                </a>
-            </li>
-            <li class="social__item social__item--bgcolor">
-                <a href="#" class="social__link">
-                       <svg  class="social__icon social__icon--fill">
-                           <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
-                       </svg>   
-                </a>
-            </li>
-          </ul>
-        </div>
-        <form  name="Subscription" class="form">
-            <h3 class="footer__title">Подпишитесь на рассылку</h3>
-            <div class="form__field">
-               <label for="email">
-                 <input type="email" name="subscription" id="email" placeholder="E-mail" class="form__input footer__input" >
-               </label >
-              <button  type="submit" class="button">Подписаться
-                <svg class="button__icon" width="24" height="24">
-                  <use href="./images/symbol-defs-hw-6.svg#icon-icon-send-1"></use>
-                </svg>
-              </button>
+              </div>
+              <address class="address">
+                <ul class="address__list">
+                  <li class="address__item">
+                    <a href="#" class="address__link address__link--color">г. Киев, пр-т Леси Украинки, 26
+                    </a>
+                  </li>
+                  <li class="address__item">
+                    <a href="#" class="address__link">info@example.com</a><br />
+                  </li>
+                  <li class="address__item">
+                    <a href="#" class="address__link">+38 099 111 11 11</a>
+                  </li>
+                </ul>
+              </address>
             </div>
+            <div class="footer__social">
+              <h3 class="footer__title">Присоединяйтесь</h3>
+              <ul class="social">
+                <li class="social__item  social__item--bgcolor">
+                  <a href="#" class="social__link">
+                    <svg class="social__icon social__icon--fill">
+                      <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item social__item--bgcolor">
+                  <a href="#" class="social__link">
+                    <svg class="social__icon social__icon--fill">
+                      <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item social__item--bgcolor">
+                  <a href="#" class="social__link">
+                    <svg class="social__icon social__icon--fill">
+                      <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item social__item--bgcolor">
+                  <a href="#" class="social__link">
+                    <svg class="social__icon social__icon--fill">
+                      <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <form  name="Subscription" class="form footer__form">
+            <h3 class="footer__title">Подпишитесь на рассылку</h3>
+            <div class="form__subscription">
+                <label for="email" class="footer__input">
+                  <input type="email" name="subscription" id="email" placeholder="E-mail" class="form__input ">
+                </label>
+                <button type="submit" class="button">Подписаться
+                  <svg class="button__icon" width="24" height="24">
+                    <use href="./images/symbol-defs-hw-6.svg#icon-icon-send-1"></use>
+                  </svg>
+                </button>
+            </div> 
         </form>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal backdrop__modal">
          <form name="modal" class="modal__form" autocomplete="off">
