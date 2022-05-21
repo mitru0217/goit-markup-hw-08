@@ -16,13 +16,13 @@
     background-position: center;
     background-size: cover;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-    url('../../images/hero/Hero-mobile-original.jpg'); 
+    url('../images/hero/Hero-mobile-original.jpg'); 
 
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
                 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-                url('../../images/hero/Hero-mobile@2x.jpg');
+                url('../images/hero/Hero-mobile@2x.jpg');
             }
     @media ( min-width: 768px) {
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
