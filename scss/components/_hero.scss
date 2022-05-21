@@ -13,10 +13,10 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-    url('../images/hero/Hero-mobile-original.jpg');
     background-position: center;
     background-size: cover;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url('../../images/hero/Hero-mobile-original.jpg'); 
 
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
