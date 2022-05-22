@@ -10,6 +10,9 @@
 }
 .team__title {
     margin-bottom: 30px;
+    @media (min-width: 1200px) {
+    margin-bottom: 50px;
+    }
 }
 .team__list {
     @extend %ul;
