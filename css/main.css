@@ -260,7 +260,7 @@ img {
 
 @media (min-width: 768px) {
   .header__item:nth-child(1) {
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -274,8 +274,10 @@ img {
   }
 }
 
-.header__item:nth-child(3) {
-  padding-bottom: 302px;
+@media (max-width: 767px) {
+  .header__item:nth-child(3) {
+    padding-bottom: 302px;
+  }
 }
 
 @media (min-width: 768px) {

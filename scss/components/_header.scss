@@ -115,7 +115,7 @@
  .header__item:nth-child(1) {
     padding-bottom: 35px;
     @media (min-width: 768px) {
-        margin-bottom: 0;
+        padding-bottom: 0;
     }
  }
   .header__item:nth-child(2) {
@@ -125,7 +125,9 @@
     }
   }
    .header__item:nth-child(3) {
-        padding-bottom: 302px;
+        @media (max-width: 767px) {
+            padding-bottom: 302px;
+        }
         @media (min-width: 768px) {
         margin-bottom: 0;
     }
